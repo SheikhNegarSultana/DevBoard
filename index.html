@@ -21,8 +21,45 @@
 }
 </style>
 
+<!-- Icon CDN -->
+ <script src="https://kit.fontawesome.com/84757c07df.js" crossorigin="anonymous"></script>
+
 </head>
-<body class="poppins-regular">
+<body class="poppins-regular px-[4rem] pt-[2rem] bg-[#F4F7FF]">
+
+    <!-- NavBar Start -->
+<div class="navbar items-center bg-[#FFFFFF] rounded-[1rem] ">
+
+    <!-- Logo Side Start -->
+  <div class="flex-1 flex gap-[0.6rem] p-[1.6rem] ">
+    <img class=" h-[3rem] w-[3rem]" src="Assets/logo.png" alt="" srcset="">
+    <a class=" text-[2rem]">Dev<span class=" font-bold">Board</span></a>
+  </div>
+  <!-- Logo Side Done -->
+
+  <div class="flex gap-[2.4rem] items-center px-[1.6rem] py-[1rem]">
+    <!-- Total Completed Tasks Start-->
+    <div class=" bg-[#F4F7FF] px-[1.2rem] py-[0.8rem] inline-flex rounded-[2.4rem] gap-[1rem] items-center">
+        <i class="fa-solid fa-square-check text-[#3752FD] text-[2rem] "></i>
+        <h1 id="completedTaskCount" class=" font-bold text-[2rem]">11</h1>
+    </div>
+    <!-- Total Completed Tasks Done-->
+
+<!-- Theme Button Start -->
+      <div id="themeBtn"  role="button" class="btn btn-ghost btn-circle avatar">
+        <div class="w-[2.5rem] outline-[0.7rem] outline-[#F4F7FF] rounded-full ">
+          <img
+          class="w-full h-full object-cover"
+            alt="Theme-btn"
+            src="Assets/theme-btn.png" />
+        </div>
+      </div>
+<!-- Theme Button Done -->
+
+    </div>
+</div>
+
+    <!-- NavBar Done -->
  
     <script src=""></script>
 </body>
