@@ -1,18 +1,27 @@
-function alertHandle(){
+function handleTasks(){
     const completeBtn = document.querySelectorAll('.completeBtn');
-
-    completeBtn.forEach(btn =>{
+        completeBtn.forEach(btn =>{
         btn.addEventListener('click', (event) =>{
             event.preventDefault();
-            btn.classList = " "
-            btn.classList.add('afterCompleteBtn');
-            alert('Board Update Completed');
-            const taskCompleteLength = document.querySelectorAll('.afterCompleteBtn').length;
+            
+            const checkList = btn.classList.value;
+            
+            if( checkList === 'afterCompleteBtn'){
 
-            if (taskCompleteLength === 6){
-                alert("Congrats! You Completed All Tasks");
+                const taskCompleteLength = document.querySelectorAll('.afterCompleteBtn').length;
+
+                let remainTaskLength = completeBtn.length - taskCompleteLength ;
+                setInnerText('taskRemainingCount' , remainTaskLength);
+
+                let completedTaskCount = innerTextToValue('completedTaskCount');
+                completedTaskCount++;
+
+                setInnerText('completedTaskCount' ,completedTaskCount );
+    
             }
+
+
         })
     })
 }
-alertHandle();
+handleTasks();
