@@ -6,6 +6,7 @@ function alertHandle(){
             event.preventDefault();
             btn.classList = " "
             btn.classList.add('afterCompleteBtn');
+            
             alert('Board Update Completed');
             const taskCompleteLength = document.querySelectorAll('.afterCompleteBtn').length;
 
