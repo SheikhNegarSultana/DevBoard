@@ -19,7 +19,13 @@ function history(){
 
             btn.disabled = true;
 
+            const clearHistoryBtn = document.getElementById('clearHistoryBtn');
+            clearHistoryBtn.addEventListener('click' , () =>{
+                history.innerHTML = ' ';
+            })
         })
+
+        
     })
 }
 history();
